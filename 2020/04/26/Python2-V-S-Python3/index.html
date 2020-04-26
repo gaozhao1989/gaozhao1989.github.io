@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Python2 V.S Python3 | 测试随笔</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="printPython2中print作为一个语句存在例如：print ‘输出的语句’Python3中print作为一个函数存在例如：print(‘输出的语句’)  整数的除法Python2整数除整数无法除尽不会产生小数，除非至少其中之一为小数例如：5&#x2F;2 结果等于2Python3整数除整数无法除尽会产生小数，除非使用「&#x2F;&#x2F;」例如：5&#x2F;2 结果等于2.5，5&#x2F;&#x2F;2 结果等于2  unicodePy">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python2 V.S Python3">
+<meta property="og:url" content="http://yoursite.com/2020/04/26/Python2-V-S-Python3/index.html">
+<meta property="og:site_name" content="测试随笔">
+<meta property="og:description" content="printPython2中print作为一个语句存在例如：print ‘输出的语句’Python3中print作为一个函数存在例如：print(‘输出的语句’)  整数的除法Python2整数除整数无法除尽不会产生小数，除非至少其中之一为小数例如：5&#x2F;2 结果等于2Python3整数除整数无法除尽会产生小数，除非使用「&#x2F;&#x2F;」例如：5&#x2F;2 结果等于2.5，5&#x2F;&#x2F;2 结果等于2  unicodePy">
+<meta property="article:published_time" content="2020-04-26T03:15:00.000Z">
+<meta property="article:modified_time" content="2020-04-26T03:06:11.996Z">
+<meta property="article:author" content="Gary Gao">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Python2">
+<meta property="article:tag" content="Python3">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="测试随笔" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">测试随笔</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Python2-V-S-Python3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/26/Python2-V-S-Python3/" class="article-date">
+  <time datetime="2020-04-26T03:15:00.000Z" itemprop="datePublished">2020-04-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Python/">Python</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python2 V.S Python3
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li><p>print<br>Python2中print作为一个语句存在<br>例如：print ‘输出的语句’<br>Python3中print作为一个函数存在<br>例如：print(‘输出的语句’)</p>
+</li>
+<li><p>整数的除法<br>Python2整数除整数无法除尽不会产生小数，除非至少其中之一为小数<br>例如：5/2 结果等于2<br>Python3整数除整数无法除尽会产生小数，除非使用「//」<br>例如：5/2 结果等于2.5，5//2 结果等于2</p>
+</li>
+<li><p>unicode<br>Python2中默认使用ascii编码，若需要调用unicode，需要在字符串前加「u」<br>例如：<br>‘中国’ 输出\xd6\xd0\xb9\xfa<br>u‘中国’ 输出u’\u4e2d\u56fd’<br>Python3中默认使用unicode编码，命名支持中文</p>
+</li>
+<li><p>输入<br>Python2中raw_input()与input()均可输入，其中raw_input()默认接收类型为str，input()默认接收类型为int<br>Python3中仅存在input()，接收类型为str</p>
+</li>
+<li><p>迭代<br>Python2中分一次迭代range()和无限迭代xrange()<br>Python3中仅存在range()，兼容无限迭代</p>
+</li>
+<li><p>不等运算符<br>Python2中可使用「&lt;&gt;」或「!=」<br>Python3中仅有 「!=」</p>
+</li>
+<li><p>repr与<code>Python2中可用「</code>」或repr()<br>Python3中仅可用repr()</p>
+</li>
+<li><p>数据类型<br>Python3中去掉了long类型，使用int替代；增加byte类型；dict的.keys() .items() .values()均返回迭代器；iterkeys()被废除；使用 in 代替 dict.has_key()</p>
+</li>
+<li><p>打开文件<br>Python2中可以使用open()或file()打开文件<br>Python3中仅可使用open()</p>
+</li>
+<li><p>map、reduce和filter<br>Python2中map和filter类型为内置函数，返回列表，reduce为内置函数<br>Python3中map和filter类型为类，返回可迭代对象，reduce移到functools模块中</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/26/Python2-V-S-Python3/" data-id="ck9gh1dhj00005fyc2ow60xe5" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python2/" rel="tag">Python2</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python3/" rel="tag">Python3</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/26/%E5%BC%80%E9%80%9ABlog%E5%92%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">开通Blog咯</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Python/">Python</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python2/" rel="tag">Python2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python3/" rel="tag">Python3</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Start/" rel="tag">Start</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Python/" style="font-size: 10px;">Python</a> <a href="/tags/Python2/" style="font-size: 10px;">Python2</a> <a href="/tags/Python3/" style="font-size: 10px;">Python3</a> <a href="/tags/Start/" style="font-size: 10px;">Start</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/04/26/Python2-V-S-Python3/">Python2 V.S Python3</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/26/%E5%BC%80%E9%80%9ABlog%E5%92%AF/">开通Blog咯</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Gary Gao<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
