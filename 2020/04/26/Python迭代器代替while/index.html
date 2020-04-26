@@ -5,13 +5,19 @@
   
 
   
-  <title>Tag: start | 测试随笔</title>
+  <title>Python迭代器代替while | 测试随笔</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="测试随笔">
-<meta property="og:url" content="http://yoursite.com/tags/start/index.html">
+  <meta name="description" content="一个常见的IO操作程序 1234567def reader(s):	while True:		data&#x3D;s.recv(CHUNKSIZE)		If data&#x3D;&#x3D;&#39;b&#39;:			breakprocess_data(data) 这种代码通常可以使用iter()来代替 1234def reader2(s):for chunk in iter(lambda:s.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python迭代器代替while">
+<meta property="og:url" content="http://yoursite.com/2020/04/26/Python%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%BB%A3%E6%9B%BFwhile/index.html">
 <meta property="og:site_name" content="测试随笔">
+<meta property="og:description" content="一个常见的IO操作程序 1234567def reader(s):	while True:		data&#x3D;s.recv(CHUNKSIZE)		If data&#x3D;&#x3D;&#39;b&#39;:			breakprocess_data(data) 这种代码通常可以使用iter()来代替 1234def reader2(s):for chunk in iter(lambda:s.">
+<meta property="article:published_time" content="2020-04-26T08:07:16.000Z">
+<meta property="article:modified_time" content="2020-04-26T08:08:17.881Z">
 <meta property="article:author" content="Gary Gao">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="while">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="测试随笔" type="application/atom+xml">
@@ -61,40 +67,60 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/04/26/%E5%BC%80%E9%80%9ABlog%E5%92%AF/" class="archive-article-date">
-  <time datetime="2020-04-26T03:10:10.000Z" itemprop="datePublished">Apr 26</time>
+        <section id="main"><article id="post-Python迭代器代替while" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/26/Python%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%BB%A3%E6%9B%BFwhile/" class="article-date">
+  <time datetime="2020-04-26T08:07:16.000Z" itemprop="datePublished">2020-04-26</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/python/">python</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/26/%E5%BC%80%E9%80%9ABlog%E5%92%AF/">开通Blog咯</a>
+    <h1 class="article-title" itemprop="name">
+      Python迭代器代替while
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一个常见的IO操作程序</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">def reader(s):</span><br><span class="line">	while True:</span><br><span class="line">		data&#x3D;s.recv(CHUNKSIZE)</span><br><span class="line">		If data&#x3D;&#x3D;&#39;b&#39;:</span><br><span class="line">			break</span><br><span class="line"></span><br><span class="line">process_data(data)</span><br></pre></td></tr></table></figure>
+<p>这种代码通常可以使用iter()来代替</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">def reader2(s):</span><br><span class="line">for chunk in iter(lambda:s.recv(CHUNKSIZE),b&#39;&#39;):</span><br><span class="line">	pass</span><br><span class="line">#process_data(data)</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/04/26/Python%E8%BF%AD%E4%BB%A3%E5%99%A8%E4%BB%A3%E6%9B%BFwhile/" data-id="ck9grty3q00031uycdgctasc0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/while/" rel="tag">while</a></li></ul>
 
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/26/Python%E4%B8%80%E8%A1%8C%E5%BC%8F%E7%9A%84%E6%9E%84%E9%80%A0%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python一行式的构造器</div>
+    </a>
+  
+</nav>
+
+  
+</article>
 
 </section>
         
